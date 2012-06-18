@@ -37,20 +37,20 @@
 		1A3BE616158FA04600557CED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A3BE618158FA04600557CED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A3BE61A158FA04600557CED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1A3BE61E158FA04600557CED /* WTII-Info.plist */ = {isa = PBXFileReference; path = "WTII-Info.plist"; sourceTree = "<group>"; };
+		1A3BE61E158FA04600557CED /* WTII-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WTII-Info.plist"; sourceTree = "<group>"; };
 		1A3BE620158FA04600557CED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A3BE622158FA04600557CED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A3BE624158FA04600557CED /* WTII-Prefix.pch */ = {isa = PBXFileReference; path = "WTII-Prefix.pch"; sourceTree = "<group>"; };
-		1A3BE625158FA04600557CED /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A3BE624158FA04600557CED /* WTII-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WTII-Prefix.pch"; sourceTree = "<group>"; };
+		1A3BE625158FA04600557CED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A3BE626158FA04600557CED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1A3BE629158FA04600557CED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1A3BE62B158FA04600557CED /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		1A3BE62B158FA04600557CED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1A3BE62C158FA04600557CED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1A3BE633158FA04600557CED /* WTIITests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTIITests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3BE634158FA04600557CED /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1A3BE63C158FA04600557CED /* WTIITests-Info.plist */ = {isa = PBXFileReference; path = "WTIITests-Info.plist"; sourceTree = "<group>"; };
+		1A3BE63C158FA04600557CED /* WTIITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WTIITests-Info.plist"; sourceTree = "<group>"; };
 		1A3BE63E158FA04600557CED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1A3BE640158FA04600557CED /* WTIITests.h */ = {isa = PBXFileReference; path = WTIITests.h; sourceTree = "<group>"; };
+		1A3BE640158FA04600557CED /* WTIITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTIITests.h; sourceTree = "<group>"; };
 		1A3BE641158FA04600557CED /* WTIITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTIITests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -360,7 +360,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WTII/WTII-Prefix.pch";
 				INFOPLIST_FILE = "WTII/WTII-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -371,7 +373,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WTII/WTII-Prefix.pch";
 				INFOPLIST_FILE = "WTII/WTII-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
